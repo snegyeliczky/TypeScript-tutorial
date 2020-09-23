@@ -1,4 +1,6 @@
 console.log("dom manipulation");
+import {Invoice} from "./classes/classes.js";
+import {greetingPerson,isPerson} from "./classes/interfaces.js";
 
 //selecting an element
 
@@ -23,42 +25,7 @@ form.addEventListener('submit', (e:Event)=>{
     console.log(type.value, toForm.value, details.value, amount.valueAsNumber)
 });
 
-
 //classes
-/*
-//normal class:
-
-class Invoice {
-    public client:string;
-    readonly detail:string;
-    private amount:number;
-
-    constructor(client: string, detail: string, amount: number) {
-        this.client = client;
-        this.detail = detail;
-        this.amount = amount;
-    }
-
-    format(){
-        return `${this.client} owes ${this.amount} HUF for ${this.detail}`;
-    }
-}
-
- */
-
-class Invoice {
-
-    constructor(
-        public client:string,
-        readonly detail: string,
-        private amount: number,
-
-    ) {}
-
-    format(){
-        return `${this.client} owes ${this.amount} HUF for ${this.detail}`;
-    }
-}
 
 const invOne= new Invoice("Béla", "working on electricity",300);
 const invTwo = new Invoice("Jozsi","working on water", 543);
@@ -72,3 +39,19 @@ invoices.forEach(e=>{
     console.log(e.detail)
    // console.log(e.amount)
 });
+
+//interfaces
+
+const me:isPerson={
+    name:"sándi",
+    age:27,
+    speak(a: string): void {
+        console.log(a);
+    },
+    spend(a: number): number {
+        console.log('I spent ',a);
+        return a;
+    }
+};
+
+greetingPerson(me);
