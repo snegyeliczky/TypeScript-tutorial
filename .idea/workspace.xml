@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb61352f-195c-453f-8060-e3067a6005c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/theDom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/theDom.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/theDom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/theDom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theDom.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theDom.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1600764728094</updated>
       <workItem from="1600764731803" duration="6931000" />
-      <workItem from="1600853836822" duration="2284000" />
+      <workItem from="1600853836822" duration="3671000" />
     </task>
     <task id="LOCAL-00001" summary="for pull request">
       <created>1600854561352</created>
@@ -73,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600854561352</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="type casting and event listeners">
+      <created>1600859435185</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600859435185</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,20 +93,25 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="for pull request" />
-    <option name="LAST_COMMIT_MESSAGE" value="for pull request" />
+    <MESSAGE value="type casting and event listeners" />
+    <option name="LAST_COMMIT_MESSAGE" value="type casting and event listeners" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="453" y="97" key="#com.intellij.ide.util.MemberChooser" timestamp="1600860619458">
+      <screen x="0" y="23" width="1280" height="702" />
+    </state>
+    <state x="453" y="97" key="#com.intellij.ide.util.MemberChooser/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1600860619458" />
     <state x="378" y="128" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600774868230">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
     <state x="378" y="128" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1600774868230" />
-    <state x="230" y="23" key="CommitChangelistDialog2" timestamp="1600854561004">
+    <state x="230" y="23" key="CommitChangelistDialog2" timestamp="1600859434916">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
-    <state x="230" y="23" key="CommitChangelistDialog2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1600854561004" />
-    <state x="240" y="102" key="Vcs.Push.Dialog.v2" timestamp="1600854563924">
+    <state x="230" y="23" key="CommitChangelistDialog2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1600859434916" />
+    <state x="240" y="102" key="Vcs.Push.Dialog.v2" timestamp="1600859436623">
       <screen x="0" y="23" width="1280" height="702" />
     </state>
-    <state x="240" y="102" key="Vcs.Push.Dialog.v2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1600854563924" />
+    <state x="240" y="102" key="Vcs.Push.Dialog.v2/-1920.161.1920.1057/0.23.1280.702@0.23.1280.702" timestamp="1600859436623" />
   </component>
 </project>
