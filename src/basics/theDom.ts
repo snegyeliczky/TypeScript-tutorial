@@ -1,6 +1,7 @@
-console.log("dom manipulation");
-import {Invoice} from "./classes/classes.js";
-import {greetingPerson,isPerson} from "./classes/interfaces.js";
+import {HasFormat} from "../interfaces/HasFormat.js";
+import {Invoice} from "../classes/classes.js";
+import {greetingPerson,isPerson} from "../interfaces/interfaces.js";
+import {Payment} from "../classes/Payment.js";
 
 //selecting an element
 
@@ -11,7 +12,6 @@ console.log(anchor.href);
 if (anchor){
     console.log(anchor.href);
 }
- */
 
 const form = document.querySelector('.new-item-form')  as HTMLFormElement;
 
@@ -25,6 +25,7 @@ form.addEventListener('submit', (e:Event)=>{
     console.log(type.value, toForm.value, details.value, amount.valueAsNumber)
 });
 
+ */
 //classes
 
 const invOne= new Invoice("Béla", "working on electricity",300);
@@ -55,3 +56,21 @@ const me:isPerson={
 };
 
 greetingPerson(me);
+
+//interfaces with classes
+
+let docOne: HasFormat;
+let docTwo: HasFormat;
+
+docOne = new Payment("Géza","For car reparation",4324);
+
+docTwo= new Invoice("Mari","cooking lunch",3210);
+
+const spends: HasFormat[]=[];
+spends.push(docOne);
+spends.push(docTwo);
+
+spends.forEach(e=>{
+    console.log("Has Format:");
+    console.log(e.format());
+});

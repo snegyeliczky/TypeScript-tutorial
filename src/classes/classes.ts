@@ -19,8 +19,9 @@ class Invoice {
 }
 
  */
+import {HasFormat} from "../interfaces/HasFormat";
 
-export class Invoice {
+export class Invoice implements HasFormat{
 
     constructor(
         public client:string,
@@ -30,6 +31,6 @@ export class Invoice {
     ) {}
 
     format(){
-        return `${this.client} owes ${this.amount} HUF for ${this.detail}`;
+        return `invoice: ${this.client} owes ${this.amount} HUF for ${this.detail}`;
     }
 }
