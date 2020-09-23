@@ -25,11 +25,13 @@ form.addEventListener('submit', (e:Event)=>{
 
 
 //classes
+/*
+//normal class:
 
 class Invoice {
-    client:string;
-    detail:string;
-    amount:number;
+    public client:string;
+    readonly detail:string;
+    private amount:number;
 
     constructor(client: string, detail: string, amount: number) {
         this.client = client;
@@ -42,13 +44,31 @@ class Invoice {
     }
 }
 
+ */
+
+class Invoice {
+
+    constructor(
+        public client:string,
+        readonly detail: string,
+        private amount: number,
+
+    ) {}
+
+    format(){
+        return `${this.client} owes ${this.amount} HUF for ${this.detail}`;
+    }
+}
+
 const invOne= new Invoice("Béla", "working on electricity",300);
 const invTwo = new Invoice("Jozsi","working on water", 543);
-console.log(invOne.format());
 
 let invoices: Invoice[] = [];
-
 invoices.push(invOne);
 invoices.push(invTwo);
 
-console.log(invoices);
+invoices.forEach(e=>{
+    console.log(e.format());
+    console.log(e.detail)
+   // console.log(e.amount)
+});
