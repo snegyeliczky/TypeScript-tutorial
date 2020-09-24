@@ -12,23 +12,26 @@ let docOne = addUID(Yosi);
 
 console.log(docOne.uid);
 
+//enum
+enum ResourceType {VEGETABE,MILK,MEET};
+
 // with interfaces
 
 interface Resource<T> {
     uid:number,
-    resourceName:string,
+    resourceName:ResourceType,
     data:T
 }
 
 const ResOne : Resource<object>={
     uid:34,
-    resourceName:"milk",
+    resourceName:ResourceType.MILK,
     data:{name:"whit milk"}
 };
 
 const ResTwo : Resource<string[]>={
     uid:45,
-    resourceName:"vegetable",
+    resourceName:ResourceType.VEGETABE,
     data: ['tomato','onion']
 };
 

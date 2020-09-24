@@ -6,14 +6,22 @@ const addUID = (obj) => {
 let Yosi = { name: 'Yoshi', age: 23 };
 let docOne = addUID(Yosi);
 console.log(docOne.uid);
+//enum
+var ResourceType;
+(function (ResourceType) {
+    ResourceType[ResourceType["VEGETABE"] = 0] = "VEGETABE";
+    ResourceType[ResourceType["MILK"] = 1] = "MILK";
+    ResourceType[ResourceType["MEET"] = 2] = "MEET";
+})(ResourceType || (ResourceType = {}));
+;
 const ResOne = {
     uid: 34,
-    resourceName: "milk",
+    resourceName: ResourceType.MILK,
     data: { name: "whit milk" }
 };
 const ResTwo = {
     uid: 45,
-    resourceName: "vegetable",
+    resourceName: ResourceType.VEGETABE,
     data: ['tomato', 'onion']
 };
 console.log(ResOne, ResTwo);
