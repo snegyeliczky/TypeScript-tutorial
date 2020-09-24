@@ -10,6 +10,6 @@ export class Payment implements HasFormat{
     ) {}
 
     format(){
-        return `payment: ${this.recipient} is owed ${this.amount} HUF for ${this.detail}`;
+        return `${this.recipient} is owed ${this.amount} HUF for ${this.detail}`;
     }
 }

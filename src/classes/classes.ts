@@ -31,6 +31,6 @@ export class Invoice implements HasFormat{
     ) {}
 
     format(){
-        return `invoice: ${this.client} owes ${this.amount} HUF for ${this.detail}`;
+        return `${this.client} owes ${this.amount} HUF for ${this.detail}`;
     }
 }

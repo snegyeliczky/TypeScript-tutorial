@@ -10,12 +10,22 @@ const container = document.querySelector('ul');
 const listTemplate = new ListTemplate(container);
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    let values;
+    values = [toForm.value, details.value, amount.valueAsNumber];
     let doc;
     if (type.value === 'invoice') {
-        doc = new Invoice(toForm.value, details.value, amount.valueAsNumber);
+        doc = new Invoice(...values);
+        listTemplate.render(doc, type.value, 'start');
     }
     else {
-        doc = new Payment(toForm.value, details.value, amount.valueAsNumber);
+        doc = new Payment(...values);
+        listTemplate.render(doc, type.value, 'end');
     }
-    listTemplate.render(doc, type.value, 'start');
 });
+//tuples
+let tuple = ["hy", true, 23];
+let student;
+for (let i = 0; i < 1; i++) {
+    student = [i, "Child" + i];
+    console.log(student);
+}
